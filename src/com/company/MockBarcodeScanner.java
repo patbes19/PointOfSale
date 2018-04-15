@@ -20,7 +20,7 @@ public class MockBarcodeScanner {
             scan barcode method to simulate scanning
          */
         Scanner barcodeScanner = new Scanner(System.in);
-        System.out.print("Enter bar code: ");
+        System.out.print("Enter barcode: ");
         this.barcode = barcodeScanner.nextLine();
         return true;
     }
