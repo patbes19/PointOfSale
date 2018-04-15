@@ -27,8 +27,6 @@ public class Receipt {
         //add product to receipt
         receiptList.add(product);
         //total price with 2 digit precision
-        double tempDoubleTotal = (100 * this.total) + (100 * product.getPrice());
-        int tempIntTotal = (int)tempDoubleTotal;
-        this.total = (double)tempIntTotal / 100;
+        this.total = (double) Math.round(100 * this.total + 100 * product.getPrice()) / 100;
     }
 }
